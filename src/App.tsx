@@ -1,11 +1,15 @@
+import React from 'react';
+// import { Route, Switch } from 'react-router';
 import './App.css';
+import Home from './pages/HomePage/HomePage';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Card Memory Game!</h1>
-      </header>
+      {/* <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch> */}
+      <Home />
     </div>
   );
 }
